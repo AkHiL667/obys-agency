@@ -22,11 +22,14 @@ body {
   border: 2px solid rgb(222, 222, 222);
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
+  pointer-events: none;
+  left: 0;
+  top: 0;
 }
 
-.loader {
+/* .loader {
   display: none;
-}
+} */
 
 #main {
   position: relative;
@@ -144,21 +147,50 @@ body {
 
 .nav-2 h6 {
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1vw
 }
+
+.nav-2 h6:hover {}
+
 
 .hero {
   /* background-color: rebeccapurple; */
   width: 70%;
-  margin-left: 30%;
+  margin-left: 27%;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .hero h1 {
   font-size: 7.5vw;
   line-height: 7vw;
   text-transform: uppercase;
+
 }
 
 .herosection:nth-child(2) {
   margin-top: 18vh;
+}
+
+#hero3 {
+  display: flex;
+}
+
+#hero3 h2,
+#hero3 h3 {
+  font-size: 7.5vw;
+  line-height: 7vw;
+  text-transform: uppercase;
+}
+
+#hero3 h2 {
+  border-bottom: 0.6vw solid white;
+}
+
+#hero3 h2:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  font-weight: 500;
+  border-bottom: 0.6vw solid rgba(255, 255, 255, 0);
+
 }
