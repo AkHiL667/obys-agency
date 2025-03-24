@@ -33,7 +33,7 @@ body {
 
 #main {
   position: relative;
-  background-color: #000000;
+  background-color: #151515;
   overflow-y: hidden;
 }
 
@@ -150,9 +150,6 @@ body {
   font-size: 1vw
 }
 
-.nav-2 h6:hover {}
-
-
 .hero {
   /* background-color: rebeccapurple; */
   width: 70%;
@@ -161,6 +158,15 @@ body {
   overflow: hidden;
 }
 
+/* .herosection::before {
+  content: "01";
+  font-family: "silk Serif";
+  font-size: 3vw;
+  position: absolute;
+  left: 18%;
+  font-weight: 400;
+} */
+
 .hero h1 {
   font-size: 7.5vw;
   line-height: 7vw;
@@ -168,8 +174,14 @@ body {
 
 }
 
+/* #hero1 span {
+  font-family: 'silk Serif';
+  color: white;
+  -webkit-text-stroke: 1px white;
+} */
+
 .herosection:nth-child(2) {
-  margin-top: 18vh;
+  margin-top: 10vh;
 }
 
 #hero3 {
@@ -193,4 +205,269 @@ body {
   font-weight: 500;
   border-bottom: 0.6vw solid rgba(255, 255, 255, 0);
 
+}
+
+.page-2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(155, 107, 43); */
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+
+}
+
+.video1 {
+  /* background-color: #d31f1f; */
+  height: 70vh;
+  width: 70vw;
+  margin-left: 30%;
+  position: relative;
+
+}
+
+.video1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video1 img {
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  height: 72vh;
+  width: 72vw;
+}
+
+.video-cursor {
+  height: 8.5vw;
+  width: 8.5vw;
+  border-radius: 50%;
+  background-color: #FFA63D;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10%;
+  left: 70%;
+}
+
+.video-cursor i {
+  font-size: 2vw;
+}
+
+.page-3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: rgb(100, 96, 96);
+}
+
+.page-4 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 5vw;
+}
+
+.page-4-content {
+  /* background-color: rgb(48, 45, 38); */
+  width: 75%;
+  margin-left: 25%;
+}
+
+.underline-page-4 {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 5vw 0;
+}
+
+.page-4 h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.page-4 h1::before {
+  content: "03";
+  font-family: "silk Serif";
+  font-size: 3vw;
+  position: absolute;
+  left: -15%;
+  font-weight: 400;
+}
+
+.page-4 p {
+  font-size: 2.05vw;
+  width: 50%;
+  margin-bottom: 5vw;
+}
+
+.page-4-flex {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.page-4-flex img {
+  object-fit: cover;
+  margin-right: 2vw;
+  width: 48%;
+}
+
+.page-4-flex p {
+  font-size: 1vw;
+  width: 23%;
+}
+
+.blue-div {
+  height: 90vh;
+  width: 40vw;
+  position: relative;
+  top: -10vw;
+  left: 22vw;
+}
+
+.blue-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.underline-page-end {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 5vw;
+}
+
+.page-5 {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.text-scroll {
+  white-space: nowrap;
+  overflow-x: hidden;
+
+}
+
+.text-scroll-2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.text-scroll h1 {
+  font-size: 7vw;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 16px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(252, 252, 252);
+  font-weight: 500;
+  animation-name: animation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  overflow-y: hidden;
+}
+
+@keyframes animation {
+  from {
+    transform: translateX(0%)
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+
+.text-scroll span {
+  font-family: 'silk Serif';
+  -webkit-text-stroke: 1px rgb(252, 252, 252);
+  color: transparent;
+}
+
+.text-scroll-2 span {
+  font-family: 'silk Serif';
+  -webkit-text-stroke: 1px rgb(252, 252, 252);
+  color: transparent;
+}
+
+.text-scroll-2 h1 {
+  font-size: 7vw;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 16px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(252, 252, 252);
+  font-weight: 500;
+  animation-name: animation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  /* margin-bottom: 1vw; */
+  overflow-y: hidden;
+
+}
+
+.footer {
+  margin-top: 12vh;
+  width: 100%;
+  height: 90vh;
+  /* background-color: #FFA63D; */
+  padding-left: 28%;
+  padding-right: 5%;
+}
+
+.footer h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.footer h1::before {
+  content: "04";
+  font-family: "silk Serif";
+  font-size: 3vw;
+  position: absolute;
+  left: -17%;
+  font-weight: 400;
+}
+
+.box-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 20%;
+}
+
+.box {
+  width: 20%;
+}
+
+.box h6 {
+  font-size: 1vw;
+}
+
+.box h5 {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.underline-footer {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 3vw 0;
+}
+
+.footer>h5 {
+  font-weight: 400;
+  font-size: 1vw;
 }
