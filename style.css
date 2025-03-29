@@ -33,6 +33,11 @@ body {
   width: 100%;
 }
 
+body {
+  cursor: none;
+
+}
+
 
 /* .mousefollower {
   mix-blend-mode: difference;
