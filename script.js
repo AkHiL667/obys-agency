@@ -82,6 +82,9 @@ function loaderAnimation() {
     stagger: 0.2,
     duration: 0.5
   })
+  tl.from('.video-cursor ', {
+    opacity: 0,
+  })
 
 
 }
